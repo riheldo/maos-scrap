@@ -1,3 +1,5 @@
 def scrap_projects_page(url):
     pass
-    import 
+    from bs4 import BeautifulSoup
+    url = "https://neoxscan.net/manga/"
+    
