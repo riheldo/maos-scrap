@@ -5,5 +5,5 @@ print("Executando script scrap em "+constant.URL)
 
 infos = scrap_projects_page(constant.URL_MANGA_PAGE)
 
-print("Informação obtida: ")
+print("$$$ Informação obtida: $$$")
 print(infos)
