@@ -34,6 +34,7 @@ def scrap_project(url: str):
 
 def scrap_projects_page(url: str):
     # 1. capturar a pagina
+    requests.get("https://neoxscan.net/manga/page")
     print("Scraping da pagina: "+url)
     site = requests.get(url)
     bs = BeautifulSoup(site.text)
