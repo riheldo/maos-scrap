@@ -44,7 +44,7 @@ def scrap_projects_page(url: str):
 
     items = bs.find_all(class_='item-thumb')
     for item in items:
-        itemA = item.find_next('https://neoxscan.net/page/22/')
+        itemA = item.find_next('a')
         projects_list.append(itemA.attrs.get('href'))
 
     print("Items obteined:", projects_list)
